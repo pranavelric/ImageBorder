@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .main_header {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+
+    .design {
+
+        position: relative;
+
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .design>*,
+    .blend>* {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+
+    }
+
+    #rotateBorder {
+        border: 15px solid red;
+        transform: rotate(45deg);
+        box-shadow: 0 0 10px #eb311f, inset 0 0 20px #eb311f;
+        transition: 5s ease-in-out;
+
+
+    }
+
+    .grid {
+        display: grid;
+
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .data_white {
+        background-color: white;
+
+
+
+    }
+
+    .blend {
+        mix-blend-mode: multiply;
+    }
+
+    img {
+        object-fit: cover;
+
+    }
+
+    .design {
+        box-shadow: 0 0 20px #bac3c3;
+    }
+
+    #rotateBorder:hover {
+
+        transform: rotate(360deg);
+
+
+    }
+</style>
+
+<body>
+    <div class="main_header">
+
+        <div class="design">
+            <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="cat image">
+            <div id="rotateBorder"></div>
+
+            <div class="grid">
+
+                <div class="data_white"></div>
+                <div></div>
+
+                <div></div>
+                <div class="data_white"></div>
+
+
+            </div>
+
+
+
+
+
+            <div class="blend">
+                <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    alt="cat image">
+
+
+                <div class="grid">
+
+                    <div></div>
+                    <div class="data_white"></div>
+                    <div class="data_white"></div>
+                    <div></div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
